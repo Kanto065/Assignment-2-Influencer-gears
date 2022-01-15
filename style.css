@@ -71,7 +71,13 @@ header{
     color: white;
     border-radius: 41px;
     background-color: #E02C6D;
-    padding: 8px 20px;
+    padding: 8px 20px; 
+}
+.preebook-button-div{
+    transition: transform 2s;
+}
+.preebook-button-div:hover{
+    transform: scale(1.05);
 }
 .img-field{
     padding-left: 120px;
