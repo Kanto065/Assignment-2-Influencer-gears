@@ -245,3 +245,48 @@ footer .fab{
     color: white;
 }
 
+/* ---------------------
+    Media Queries 
+-----------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    
+    .first-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-field{
+        text-align: center;
+    }
+    .img-field{
+        margin: 0;
+    }
+    .img-circle .img-camera{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    .company-logos{
+        display: none;
+    }
+
+    .popular-collection>.products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .feedback-section{
+        width: 100%;
+    }
+    .feedback-section .feedbacks{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+}
