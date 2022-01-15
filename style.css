@@ -1,0 +1,247 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*--------------------------------
+     common styles or utilities
+---------------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*---------------- 
+    header style 
+-----------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.menu .fas{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/*--------------------------
+     first section style 
+----------------------------*/
+.first-section{
+    display: flex;
+    width: 80%;
+    margin-bottom: 110px;  
+    /* transition: transform 2s; */
+}
+.first-section>.text-field .fa-arrow-right{
+    animation: sliding 1s ease forwards infinite alternate ;
+}
+.text-field{
+    /* width: 50%; */
+    padding-top: 100px;
+}
+.text-field h1{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+}
+.text-field .preebook-button{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    padding: 8px 20px;
+}
+.img-field{
+    padding-left: 120px;
+}
+.img-field{
+    width: 50%;
+}
+.img-field .img-camera{
+    position: absolute;
+    z-index: 2;
+}
+.img-field .img-circle{
+    position: absolute;
+    z-index: 1;
+}
+
+/* animation */
+@keyframes sliding {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(20px);
+    }    
+}
+
+/*------------------------
+        logos section 
+ ----------------------*/
+ .company-logos{
+    width: 1048px;
+    margin-bottom: 30px;
+ }
+ hr{
+    border: 1px solid #D1D1D1;
+ }
+.logos{
+    display: flex;
+    justify-content: center;
+
+}
+.logos img{
+    padding: 10px 20px;
+}
+
+/*--------------------------- 
+    popular collection style
+-----------------------------  */
+.popular-collection{
+    width: 1048px;
+    
+}
+.section-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.product{
+    width: 300px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.product-pic img{
+    width: 300px;
+    height: 256px;
+}
+.product-info .product-title{
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.product-info .product-price{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+.product-info .rating{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.product-info .rating p{
+    margin: 0;
+    padding-left: 5px;
+}
+.rating .fas{
+    padding-left: 3px;
+    color: orange;
+}
+
+.product-info .discription{
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.see-more-button{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    margin-top: 40px;
+}
+
+/*---------------------
+ feedback section style
+ ------------------------ */
+ .feedback-section{
+    margin-bottom: 40px;
+ }
+ .feedbacks{
+    width: 1048px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.feedback:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.feedback .pic img{
+    width: 200px;
+    height: 200px;
+}
+
+/*-------------- 
+    footer style 
+-----------------*/
+footer{
+    width: 100%;
+    background-color: #0A0826;
+    text-align: center;
+    color: white;
+    padding-bottom: 35px;
+}
+footer h3{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+footer p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+#pad{
+    padding-bottom: 20px;
+}
+footer .fab{
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 8px;
+    border-radius: 100px;
+    color: white;
+}
+
