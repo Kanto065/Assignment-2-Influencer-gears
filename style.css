@@ -58,12 +58,16 @@ header{
 }
 .text-field{
     /* width: 50%; */
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .text-field h1{
     font-weight: 700;
     font-size: 52px;
     line-height: 70px;
+    margin-bottom: 20px;
+}
+.text-field p{
+    padding-bottom: 15px;
 }
 .text-field .preebook-button{
     text-decoration: none;
